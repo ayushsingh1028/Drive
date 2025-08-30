@@ -1,0 +1,12 @@
+[build]
+builder = "NIXPACKS"
+
+[service.backend]
+root = "Drive-BE"
+start = "java -jar target/*.jar"
+port = 8080
+
+[service.frontend]
+root = "drive-UI"
+start = "npm run start"
+port = 3000
